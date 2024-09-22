@@ -53,7 +53,10 @@ class SignupScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
+                  MaterialPageRoute(
+                      builder: (context) => HomePage(
+                            title: '',
+                          )),
                 );
               },
               child: const Text('Signup'),
@@ -63,7 +66,10 @@ class SignupScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
+                  MaterialPageRoute(
+                      builder: (context) => HomePage(
+                            title: '',
+                          )),
                 );
               },
               child: const Text('Sign up with Google'),
